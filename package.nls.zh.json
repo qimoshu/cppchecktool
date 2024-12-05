@@ -1,0 +1,10 @@
+{
+    "cppcheck-tool.setting.titile":"cppcheck-tool 设置",
+    "cppcheck-tool.setting.title.cppcheckPath": "cppcheck 路径",
+    "cppcheck-tool.setting.description.cppcheckPath": "cppcheck 可执行文件所在绝对路径",
+    "cppcheck-tool.setting.title.cppcheckArgs": "cppcheck 参数",
+    "cppcheck-tool.setting.description.cppcheckArgs": "执行 cppcheck 扫描时需要的参数",
+    "cppcheck-tool.setting.title.autoScan": "自动扫描",
+    "cppcheck-tool.setting.description.autoScan": "是否在保存文件时自动扫描该文件"
+    
+}

@@ -1,0 +1,9 @@
+{
+    "cppcheck-tool.setting.title.cppcheckPath": "cppcheck path",
+    "cppcheck-tool.setting.description.cppcheckPath": "The absolute path where the cppcheck executable file is located",
+    "cppcheck-tool.setting.title.cppcheckArgs": "cppcheck Arguments",
+    "cppcheck-tool.setting.description.cppcheckArgs": "Arguments required for performing cppcheck scan",
+    "cppcheck-tool.setting.title.autoScan": "auto Scan",
+    "cppcheck-tool.setting.description.autoScan": "Automatically scan the file when saving it"
+
+}

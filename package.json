@@ -1,0 +1,94 @@
+{
+  "name": "cppcheck-tool",
+  "displayName": "cppcheck-tool",
+  "description": "use cppcheck scan cpp code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:cppcheck-tool.run"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cppcheck-tool.runScan",
+        "title": "%cppcheck-tool.command.title.runScan%",
+        "category": "cppcheck-tool"
+      },
+      {
+        "command": "cppcheck-tool.setCppcheckPath",
+        "title": "%cppcheck-tool.command.title.setCppcheckPath%",
+        "category": "cppcheck-tool"
+      },
+      {
+        "command": "cppcheck-tool.setCppcheckArgs",
+        "title": "%cppcheck-tool.command.title.setCppcheckArgs%",
+        "category": "cppcheck-tool"
+      },
+      {
+        "command": "cppcheck-tool.setAutoScan",
+        "title": "%cppcheck-tool.command.title.setAutoScan%",
+        "category": "cppcheck-tool"
+      },
+      {
+        "command": "cppcheck-tool.setScanPath",
+        "title": "%cppcheck-tool.command.title.setScanPath%",
+        "category": "cppcheck-tool"
+      }
+    ],
+    "configuration": {
+      "type" : "object",
+      "title": "%cppcheck-tool.setting.titile%",
+      "properties": {
+        "cppcheck-tool.cppcheckPath": {
+          "type": "string",
+          "default": "",
+          "description": "%cppcheck-tool.setting.description.cppcheckPath%",
+          "category": "cppcheck-tool"
+        },
+        "cppcheck-tool.Arguments":{
+          "type": "string",
+          "default": "",
+          "description": "%cppcheck-tool.setting.description.cppcheckArgs%",
+          "category": "cppcheck-tool"
+        },
+        "cppcheck-tool.autoScan":{
+          "type": "boolean",
+          "default": true,
+          "description": "%cppcheck-tool.setting.description.autoScan%",
+          "category": "cppcheck-tool"
+        },
+        "cppcheck-tool.scanPath":{
+          "type": "string",
+          "default": "",
+          "description": "%cppcheck-tool.setting.description.scanPath%",
+          "category": "cppcheck-tool"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.95.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.13.0",
+    "typescript": "^5.6.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
