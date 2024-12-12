@@ -10,14 +10,30 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:cppcheck-tool.run"
+    "onCommand:cppcheck-tool.run",
+    "onLanguage:cpp",
+    "onLanguage:c",
+    "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "cppcheck-tool.runScan",
-        "title": "%cppcheck-tool.command.title.runScan%",
+        "command": "cppcheck-tool.scanCurrentFile",
+        "title": "%cppcheck-tool.command.title.scanCurrentFile%",
+        "description": "%cppcheck-tool.command.description.scanCurrentFile%",
+        "category": "cppcheck-tool"
+      },
+      {
+        "command": "cppcheck-tool.scanSpecifiedDir",
+        "title": "%cppcheck-tool.command.title.scanSpecifiedDir%",
+        "description": "%cppcheck-tool.command.description.scanSpecifiedDir%",
+        "category": "cppcheck-tool"
+      },
+      {
+        "command": "cppcheck-tool.scanSettingPath",
+        "title": "%cppcheck-tool.command.title.scanSettingPath%",
+        "description": "%cppcheck-tool.command.description.scanSettingPath%",
         "category": "cppcheck-tool"
       },
       {
@@ -33,6 +49,7 @@
       {
         "command": "cppcheck-tool.setAutoScan",
         "title": "%cppcheck-tool.command.title.setAutoScan%",
+        "description": "%cppcheck-tool.command.description.setAutoScan%",
         "category": "cppcheck-tool"
       },
       {
@@ -43,7 +60,7 @@
     ],
     "configuration": {
       "type" : "object",
-      "title": "%cppcheck-tool.setting.titile%",
+      "title": "%cppcheck-tool.setting.title%",
       "properties": {
         "cppcheck-tool.cppcheckPath": {
           "type": "string",

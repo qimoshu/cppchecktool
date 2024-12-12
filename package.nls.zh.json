@@ -1,10 +1,27 @@
 {
-    "cppcheck-tool.setting.titile":"cppcheck-tool 设置",
+    "cppcheck-tool.setting.title":"cppcheck-tool 设置",
     "cppcheck-tool.setting.title.cppcheckPath": "cppcheck 路径",
     "cppcheck-tool.setting.description.cppcheckPath": "cppcheck 可执行文件所在绝对路径",
     "cppcheck-tool.setting.title.cppcheckArgs": "cppcheck 参数",
     "cppcheck-tool.setting.description.cppcheckArgs": "执行 cppcheck 扫描时需要的参数",
     "cppcheck-tool.setting.title.autoScan": "自动扫描",
-    "cppcheck-tool.setting.description.autoScan": "是否在保存文件时自动扫描该文件"
-    
+    "cppcheck-tool.setting.description.autoScan": "是否在保存文件时自动扫描该文件",
+    "cppcheck-tool.setting.description.scanPath": "扫描的相对路径。假设在修改A/B/C/D文件，设置扫描路径为B，则扫描B目录下的文件，多个可以使用;英文半角分号隔开",
+
+    "cppcheck-tool.command.title.scanCurrentFile" : "扫描当前文件",
+    "cppcheck-tool.command.description.scanCurrentFile" : "运行 cppcheck 扫描当前文件",
+    "cppcheck-tool.command.title.scanSettingPath" : "扫描设置路径",
+    "cppcheck-tool.command.description.scanSettingPath" : "运行 cppcheck 扫描设置中的相对路径",
+    "cppcheck-tool.command.title.scanSpecifiedDir" : "扫描指定文件夹",
+    "cppcheck-tool.command.description.runScanAll" : "运行 cppcheck 扫描扫描指定文件夹",
+    "cppcheck-tool.command.title.setCppcheckPath" : "设置 cppcheck 路径",
+    "cppcheck-tool.command.description.setCppcheckPath" : "设置 cppcheck 路径",
+    "cppcheck-tool.command.title.setCppcheckArgs" : "设置 cppcheck 参数",
+    "cppcheck-tool.command.description.setCppcheckArgs" : "设置 cppcheck 参数",
+    "cppcheck-tool.command.title.setAutoScan" : "设置自动扫描",
+    "cppcheck-tool.command.description.setAutoScan" : "在保存文件时自动扫描该文件",
+    "cppcheck-tool.command.title.setScanPath": "设置扫描的相对路径",
+    "cppcheck-tool.command.description.setScanPath": "设置 cppcheck 扫描的相对路径"
+
+
 }
