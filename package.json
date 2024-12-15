@@ -10,10 +10,6 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:cppcheck-tool.run",
-    "onLanguage:cpp",
-    "onLanguage:c",
-    "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "contributes": {
